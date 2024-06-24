@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Mengatur gaya dasar untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('Rumah_Sakit.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Mengatur gaya dasar untuk form */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInSlideDown 0.9s forwards;
+}
+
+@keyframes fadeInSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mengatur gaya untuk fieldset dan legend */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Mengatur gaya untuk label dan input */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-container .icon {
+  position: absolute;
+  left: 10px;
+  top: 80%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+.input-box i{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.wrapper .input-box{
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 10px 10px 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="text"], input[type="password"], input[type="radio"] {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.role-select {
+  width: 30%;
+  padding:3px;
+  border: 1px solid #0d0d0d;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+}
+
+.role-select:focus {
+  border-color: #ccc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0,5);
+}
+
+.role-select option {
+  padding: 5px;
+}
+
+/* Mengatur gaya untuk tombol submit */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Mengatur gaya untuk div flex */
+.flex {
+  display: flex;
+  padding-top: 0.1rem;
+  margin-bottom:0!important;
+  align-items: center;
+}
+
+.flex span {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+#l, #p{
+  width: fit-content !important;
+  margin-right: 0.5rem;
+  margin-top:0;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+/* Mengatur gaya untuk div.bottom */
+.bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bottom a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.bottom a:hover {
+  text-decoration: underline;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+.button-container {
+  margin-top: 20px; /* Jarak antara form field dan tombol */
+}
+.button-container button {
+  margin-right: 20px; /* Jarak horizontal antara tombol */
+  margin-top: 10px; /* Jarak vertikal antara tombol dan elemen di atasnya */
+}
+.button-container .cancel-button {
+  margin-left: 0; /* Pastikan tidak ada margin tambahan di sebelah kiri tombol batal */
+}
+
+select {
+  color: black;
+}
+

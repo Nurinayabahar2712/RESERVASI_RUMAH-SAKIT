@@ -1,0 +1,117 @@
+body {
+    background: #C2DED1;
+    box-sizing: border-box;
+    margin: 0;
+    font-family:sans-serif;
+}
+
+.container h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.col-lg-3, .col-md-6, .mb-4 {
+    flex: 1 1 calc(25% - 30px);
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.card:hover {
+    transform: scale(0.9);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.card-body button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-body button a {
+    color: white;
+    text-decoration: none;
+}
+
+.card-body button:hover {
+    background: #0056b3;
+}
+.button-container {
+    margin-top: 20px; /* Tambahkan jarak vertikal di atas container button */
+}
+.add-button, .cancel-button {
+    margin-right: 10px; /* Tambahkan jarak horizontal antar tombol */
+    padding: 10px 20px; /* Sesuaikan padding tombol untuk tampilan yang lebih baik */
+    background-color: #007bff; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    text-decoration: none; /* Hilangkan garis bawah pada link */
+    border-radius: 5px; /* Tambahkan sedikit radius pada sudut tombol */
+}
+.cancel-button {
+    background-color: #dc3545; /* Warna latar belakang tombol batal */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #074173;
+    color: white;
+    margin-top: 40px;
+}
+
+@media (max-width: 1000px) {
+    .col-lg-3, .col-md-6, .mb-4 {
+        flex: 1 1 calc(50% - 30px);
+    }
+}
+
+@media (max-width: 800px) {
+    .col-lg-3, .col-md-6, .mb-4 {
+        flex: 1 1 calc(100% - 30px);
+    }
+}
